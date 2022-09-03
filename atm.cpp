@@ -1,6 +1,7 @@
 /** 
 * Mock atm project given as a homework to Rbeee. 
 * Combinedly made mostly by rbeee and purpleblueslime
+* and also used tenk's artificial brain to fix issues
 * with me pitching in some effort.
 */
 #include <iostream>
