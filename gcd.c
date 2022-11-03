@@ -6,7 +6,18 @@
 
 #include <stdio.h>
 
-int getGcd(int a, int b) {
+int main() {
+    int a, b;
+    printf("Please provide an integer: ");
+    scanf("%d", &a);
+    printf("Please provide another integer: ");
+    scanf("%d", &b);
+    if (a < b) {
+        int z = a;
+        a = b;
+        b = z;
+    }
+    int x = a, y = b;
     int gcd, c;
     if (b == 0) {
         gcd = a;
@@ -18,20 +29,6 @@ int getGcd(int a, int b) {
         }
         gcd = a;
     }
-    return gcd;
-}
-int main() {
-    int x, y;
-    printf("Please provide an integer: ");
-    scanf("%d", x);
-    printf("Please provide another integer: ");
-    scanf("%d", y);
-    if (x < y) {
-        int z = x;
-        x = y;
-        y = z;
-    }
-    int gcd = getGcd(x, y);
     printf("The gcd of %d and %d is: %d", x, y, gcd);
     return 0;
 }
